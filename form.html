@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prajwal Waykos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
  <!-- Custom styles for this template -->
  <link href="carousel.css" rel="stylesheet">
  <link href="footers.css" rel="stylesheet">
- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -30,60 +29,16 @@
           font-size: 3.5rem;
         }
       }
+      .formerror
+      {
+        color:red;
+      }
     </style>
-
     
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
    
 </head>
-<style>
- 
-  .WriteImage{
-    position: absolute;
-    top: 15%;
-    left: 35%;
-  }
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
-  body
-  {
-    margin :0;
-    padding: 0;
-  }
-  .button{
-    background-color:#B1D0E0;
-  }
-  .link{
-    color:rgb(21, 151, 129)
-  }
-  a:hover{
-    color:#B1D0E0;
-  }
-  input:checked {
-  border: 2px solid green;
-  background-color: green;
-}
-radio{
-  background-color: green;
-}
-</style>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-  
-<script src="form-validation.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://kit.fontawesome.com/74c85445c3.js" crossorigin="anonymous"></script>
 
 <body class="">
 
@@ -93,7 +48,7 @@ radio{
         <img src="Gallery/I2.jpg" alt="" width="60" height="50" class="bd-placeholder-img bd-placeholder-img rounded-circle" >
       </a>
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Prajwal Waykos</a>
+      <a class="navbar-brand" href="#">Feedback</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -346,22 +301,46 @@ radio{
         </div>
         <div class="col-md-7 col-lg-8">
           <h4 class="mb-3">Personal Information</h4>
-          <form class="needs-validation" novalidate>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <form class="" onsubmit="return validateForm()" name = "feedback" action="/action.php" method = "post">
 
             <div class="row g-3">
               <div class="col-sm-6">
                 <label for="firstName" class="form-label">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid first name is required.
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required name = "firstName">
+                <div class="invalid-feedback formerror" id="firstNameerror" >
                 </div>
-              </div>
+              </div> 
              
               <div class="col-sm-6">
                 <label for="lastName" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required name = "lastName">
+                <div class="invalid-feedback formerror" id = "lastNameerror" >
                 </div>
               </div>
             <div class="row g-3">
@@ -383,9 +362,8 @@ radio{
              
               <div class="col-sm-6">
                 <label for="lastName" class="form-label">Age</label>
-                <input type="number" class="form-control" id="lastName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
+                <input type="text" class="form-control" id="Age" placeholder="" value="" required>
+                <div class="invalid-feedback formerror" id = "Ageerror">
                 </div>
               </div>
              </div>
@@ -393,15 +371,13 @@ radio{
               <div class="col-12">
                 <label for="email" class="form-label">Email <span class="text-muted">(Official)</span></label>
                 <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                <div class="invalid-feedback">
-                  Please enter a valid email.
+                <div class="invalid-feedback formerror" id = emailerror>
                 </div>
               </div>
               <div class="col-12">
                 <label for="email" class="form-label">Whatsapp Number</label>
-                <input type="number" class="form-control" id="email" placeholder="+91 - ">
-                <div class="invalid-feedback">
-                  Please enter a valid Mobile number
+                <input type="tel" class="form-control" id="mob_number" placeholder="+91 - ">
+                <div class="invalid-feedback formerror" id = "mob_numbererror">
                 </div>
               </div>
                 <hr style="padding-bottom: 5px;">
@@ -586,13 +562,33 @@ radio{
             <hr class="my-4" style="margin-bottom: 50px;">
             <br>
             <br>
+         
 
 
-          </form>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
-      <button class="w-100 btn btn-success btn-lg"  type= submit>Submit</button>
+     <input class="w-100 btn btn-success btn-lg"  style = "padding-top: 10px;"type= "Submit" value="submit" onclick="validateForm()"></input>
     </main>
+  </form>
     <br>
     <br>
     <br>
@@ -680,6 +676,135 @@ radio{
         </div>
       </div>
     </footer>
-  </div>  
+  </div>
+  <script>
+
+    function seterror(id,error)
+    {
+      //sets error inside tag of id
+      // Element = document.querySelector(id);
+      // // Element.getElementsByClassName('formerror')[0].innerHTML = error;
+      // // document.getElementById(id)
+      // console.log(Element)
+      // Element.innerHTML  = error;
+      $(id).text(error)
+      $(id).removeClass("invalid-feedback")
+    }
+    
+    function validateForm()
+    {
+      var returnval = true;
+      //Perform some validation and of the validation fails set this variable to false
+    
+      var name = document.forms["feedback"]["firstName"].value;
+      var lastname = document.forms["feedback"]["lastName"].value;
+      var age = document.forms["feedback"]["Age"].value;
+      var email = document.forms["feedback"]["email"].value;
+      var mobile_number = document.forms["feedback"]["mob_number"].value;
+      var mobile_number = mobile_number + '';
+      console.log(name)
+      console.log(lastname)
+      console.log(age)
+      console.log(email)
+      console.log(mobile_number)
+      jQuery.support.cors = true;
+
+      //First name
+      if(name.length<3 )
+      {
+        seterror("#firstNameerror", "*Length of name is too short");
+        returnval =false;
+      }
+      else if(!isNaN(name))
+        {
+          seterror("#firstNameerror", "*Name must be a string not a number");
+          returnval =false;
+        }
+      else{
+        
+        $("#firstNameerror").addClass("invalid-feedback")
+      }
+
+      //Last name 
+      if(lastname.length<3 )
+      {
+        seterror("#lastNameerror", "*Length of lastname is too short");
+        returnval =false;
+      }
+      else if(!isNaN(lastname))
+      {
+          seterror("#lastNameerror", "*lastName must be a string not a number");
+          returnval =false;
+      }
+      else{
+        
+        $("#lastNameerror").addClass("invalid-feedback")
+      }
+     
+      //Age 
+      if(age<0 || age>100)
+      {
+        seterror("#Ageerror", "*input a valid age");
+        returnval =false;
+      }
+      else{
+        
+        $("#Ageerror").addClass("invalid-feedback")
+      }
+
+
+      //email
+      var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+      console.log(mailformat.test(email));
+      if(!isNaN(email))
+      {
+        seterror("#emailerror", "*input a valid email");
+        returnval =false;
+      }
+      
+      else if(!(mailformat.test(email)))
+      {
+        seterror("#emailerror", "*input a valid email");
+        returnval =false;
+      }
+      
+      else{
+        
+        $("#emailerror").addClass("invalid-feedback")
+      }
+
+      //phone number
+      
+      if(isNaN(mobile_number))
+      {
+        seterror("#mob_numbererror", "*input a valid Mobile Number");
+        returnval =false;
+      }
+      
+      else if((mobile_number).length !=10)
+      {
+        seterror("#mob_numbererror", "*input a valid Mobile Number");
+        returnval =false;
+      }
+      
+      else{
+        
+        $("#mob_numbererror").addClass("invalid-feedback")
+      }
+
+      return returnval;
+    }
+
+ 
+    
+    
+    
+    
+    </script>
 </body>
+<script src="https://kit.fontawesome.com/74c85445c3.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
 </html>
