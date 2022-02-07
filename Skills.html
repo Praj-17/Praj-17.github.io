@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prajwal Waykos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
 
-    <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
  <!-- Custom styles for this template -->
  <link href="carousel.css" rel="stylesheet">
  <link href="footers.css" rel="stylesheet">
@@ -82,9 +80,25 @@
  p{
    text-align: justify;
  }
+ .float{
+  flex:1;
+  display: flex;
+ }
+ .float:hover{
+   flex-grow: 2;
+   display: flex;
+ }
+ .skill-details{
+  display: none;
+ }
+ .skill-details2{
+  display: none;
+ }
+ 
+ 
  
 </style>
-<script src="https://kit.fontawesome.com/74c85445c3.js" crossorigin="anonymous"></script>
+
 <body>
     <nav  class="navbar navbar-expand-lg navbar-dark bg-dark" >
         <a class="navbar-brand" href="#">
@@ -134,7 +148,7 @@
         
           <div class="container px-4 py-5" id="featured-3">
             <h2 class="pb-2 border-bottom heading">Programming Languages</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 ">
               <div class="feature col">
                 <div class="feature-icon bg-dark bg-gradient">
                   <i class="fab fa-python fa-5x" style = "border: black ;border-width: 2px; " ></i>
@@ -274,62 +288,62 @@
           <div class="container px-4 py-5" id="icon-grid">
             <h2 class="pb-2 border-bottom heading">Non-Technical Skills</h2>
         
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-              <div class="col d-flex align-items-start">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5 skill">
+              <div class="col d-flex align-items-start ">
                 <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
-                <div>
+                <div >
                   <h4 class="fw-bold mb-0">Communication</h4>
-                  <p>I posses excellent Communication skills. I can professionally speak in 3 Languages.<strong>English,Hindi,Marathi.</strong> I also have hosted many school level programmes and few online college level programs. I have good Communication skills and you may find my recorded videos of my anchored sessions and event on my shared drive.
+                  <p class = "skill-details">I posses excellent Communication skills. I can professionally speak in 3 Languages.<strong>English,Hindi,Marathi.</strong> I also have hosted many school level programmes and few online college level programs. I have good Communication skills and you may find my recorded videos of my anchored sessions and event on my shared drive.
                   </p>
                 </div>
               </div>
               <div class="col d-flex align-items-start">
                 <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">Learning Attitude</h4>
-                  <p>My grasping power is also really good. Which helps me in acquiring any new skill pretty soon and hence I tend to have a good and constant learning attitude. Duw to this attitude I stand ahead of my classmates. especially in the technical domain.</p>
+                <div >
+                  <h4 class="fw-bold mb-0 ">Learning Attitude</h4>
+                  <p class = "skill-details">My grasping power is also really good. Which helps me in acquiring any new skill pretty soon and hence I tend to have a good and constant learning attitude. Duw to this attitude I stand ahead of my classmates. especially in the technical domain.</p>
                 </div>
               </div>
               <div class="col d-flex align-items-start">
                 <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">Financial</h4>
-                  <p>I am amatuer  at financial. As a first step I had saved 50,000rs even before I got 18 years old.And hence I'm trying to generate good revenue from this using Stock market and also learning other investments options.</p>
+                <div >
+                  <h4 class="fw-bold mb-0 ">Finance</h4>
+                  <p class = "skill-details">I am amatuer  at financial. As a first step I had saved 50,000rs even before I got 18 years old.And hence I'm trying to generate good revenue from this using Stock market and also learning other investments options.</p>
                 </div>
               </div>
               <div class="col d-flex align-items-start">
                 <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">MS - Office</h4>
-                  <p> I am Skilled at all the Microsoft office softwares such as Word, PowerPoint , Excel and One note. I make precise use of all the softwares and have already created various reports , Ppts, Excel sheet and one note Notebooks. </p>
+                <div >
+                  <h4 class="fw-bold mb-0 ">MS - Office</h4>
+                  <p class = "skill-details"> I am Skilled at all the Microsoft office softwares such as Word, PowerPoint , Excel and One note. I make precise use of all the softwares and have already created various reports , Ppts, Excel sheet and one note Notebooks. </p>
                 </div>
               </div>
-              <div class="col d-flex align-items-start">
+              <div class="col d-flex align-items-start skill2">
                 <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">SQL</h4>
-                  <p>I also skilled at Data Management Systens such as MySQL , PostgreSQL and MongoDB, I Make the use of Databases In my machine learning and Deep learning projects and also it is a part of academics hence I must be already very good at it. </p>
+                <div >
+                  <h4 class="fw-bold mb-0" >SQL</h4>
+                  <p class = "skill-details2">I also skilled at Data Management Systens such as MySQL , PostgreSQL and MongoDB, I Make the use of Databases In my machine learning and Deep learning projects and also it is a part of academics hence I must be already very good at it. </p>
                 </div>
               </div>
               <div class="col d-flex align-items-start">
                 <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">Problem Solving</h4>
-                  <p>Problem Solving and a good presence of mind is one of the key aspects of my life. I am impromptu to find an algorithm which  would the problem. I also am good at playing chess which enhances my problem solving attitude and my aptitude.</p>
+                <div >
+                  <h4 class="fw-bold mb-0 ">Problem Solving</h4>
+                  <p class = "skill-details2">Problem Solving and a good presence of mind is one of the key aspects of my life. I am impromptu to find an algorithm which  would the problem. I also am good at playing chess which enhances my problem solving attitude and my aptitude.</p>
                 </div>
               </div>
               <div class="col d-flex align-items-start">
                 <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">Analytics/Observation </h4>
-                  <p>I am Exceptionally keen at observing new things and drawing out interferences from them. Which makes be a good data analysts. as discusssed earlier I posses good Excel/ Knime handling skills which enhance my analysing power</p>
+                <div >
+                  <h4 class="fw-bold mb-0 ">Analytics/Observation </h4>
+                  <p class = "skill-details2">I am Exceptionally keen at observing new things and drawing out interferences from them. Which makes be a good data analysts. as discusssed earlier I posses good Excel/ Knime handling skills which enhance my analysing power</p>
                 </div>
               </div>
               <div class="col d-flex align-items-start">
                 <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
-                <div>
-                  <h4 class="fw-bold mb-0">Stable Mindset</h4>
-                  <p>I have a cool and calm personality and I do not get discouraged under any cirucmstances. I am always looking to get myslef motivated via anything I see. As discussed earlier I posses really good Analytics/ obseravation skills which help me to learn from my mistakes.</p>
+                <div >
+                  <h4 class="fw-bold mb-0 ">Stable Mindset</h4>
+                  <p class = "skill-details2">I have a cool and calm personality and I do not get discouraged under any cirucmstances. I am always looking to get myslef motivated via anything I see. As discussed earlier I posses really good Analytics/ obseravation skills which help me to learn from my mistakes.</p>
                 </div>
               </div>
               
@@ -338,15 +352,13 @@
         </main>
         
       </section>
-        
-            <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      
         
               
             
 
             <div class="bg-dark text-white" style="background-color: black;">
-              <hr class="bg-dark" ">
-              </hr>
+              
             </div>          
              <div class=" bg-dark text-white" style="padding-bottom:1% ;padding-top : 1%">
                <footer class="py-30">
@@ -408,5 +420,7 @@
              </div>
              
 </body>
+<script src= "jquery-3.6.0.min.js"></script>
+<script src = "/jquery.js"></script>
 <script src="https://kit.fontawesome.com/74c85445c3.js" crossorigin="anonymous"></script>
 </html>
