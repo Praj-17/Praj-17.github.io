@@ -25,7 +25,7 @@
     });
     $(".skill2").mouseenter(function () {
       $(".skill-details2").show(1000);
-      $(".skill-details2").css('display', 'block');
+      $(".skill-details2 ").css('display', 'block');
     });
 
     //Animate Function in Jquery

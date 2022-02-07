@@ -38,7 +38,7 @@
     background-color:#B1D0E0;
   }
   .link{
-    color:rgb(21, 151, 129);
+    color:rgb(226, 241, 239);
   }
   a:hover{
     color:#B1D0E0;
@@ -50,6 +50,12 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  .responsive_img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Prevent the image from stretching. So it crops the image to prevent from awkward stretching */
+}
 </style>
 <body>
   <nav  class="navbar navbar-expand-lg navbar-dark bg-dark" >
@@ -97,8 +103,8 @@
 
   <main>
 
-    <section class="py-5 text-center bg-dark text-white">
-      <div class="row py-lg-5">
+    <section class="py-5 text-center bg-dark text-white ">
+        <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light">Welcome to my Projects Portfolio</h1>
           <p class="lead text-muted">This page enlists all the projects completed using all the technical/Non-Technical Filds that I am skilled at. You can click on the below given links to visit my profiles or can click on the project name to view it. </p>
@@ -110,16 +116,57 @@
       </div>
     </section>
   
-    <div class="album py-5 bg-dark text-white padding">
+    <div class="album py-5 bg-dark text-white padding ">
       <div class="">
   
         <div class="row row-cols-1 row-cols-sm-2  row-cols-md-3 g-3">
-          <div class="col ">
+          <div class="col " style="margin-bottom: 1.2%;">
             <div class="card shadow-sm  bg ">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <img src="https://franchisebatao.com/wp-content/uploads/2020/04/dmart-supermarket-business-in-hindi-scaled-1.jpg" alt="img" class="responsive_img">
+             
   
-              <div class="card-body ">
-                <p class="card-text  ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="card-body " >
+                <h4>D-Mart Number of Counters Problem</h4>
+                <p class="card-text  ">Used multiple regression models to predict the number of counters to be established in a given month based upon the time, month and location of the D-mart.This is a case study. It can be used in any Queues</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary text-white">
+                      <a href="https://github.com/Praj-17/Mega-Projects/tree/master/DMart-%20no%20of%20counters%20Problem" target = "blank" class="responsive_img">
+
+                      <i class="far fa-eye link"></i> </a>View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="fas fa-heart"></i> Like</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="margin-bottom: 1.2%;">
+            <div class="card shadow-sm bg " >
+              <img src="https://cdn1.expresscomputer.in/wp-content/uploads/2021/03/24161745/EC_Artificial_Intelligence_AI_750.jpg" alt="img" class="responsive_img" >
+              <div class="card-body">
+                <h4>Blind's Eye | Internship Project</h4>
+                <p class="card-text">This is the Blind's Eye project. Done in an internship. It uses mutiple ML/DL/NLP techniques to narrate the outside world to a blind person! Internship done at Bharat Soft Solutions. In my Second Year</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary text-white">
+                      <a href="https://github.com/Praj-17/AI---Project" target="blank">
+                      <i class="far fa-eye link"></i></a> View</button>                      
+                    <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="fas fa-heart"></i> Like</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm bg ">
+              <img src="https://housepriceprediction.com/wp-content/uploads/2018/07/11679.4c96032809c10d54e3e216015aecf32a_XL.jpg" alt="img"
+              class = "responsive_img">
+  
+              <div class="card-body">
+                <h4>Real Estate House Price Prediction</h4>
+                <p class="card-text">Uses Linear Regression and multiple Data Preprocessing and Data Visualization menthods to predict the house of prices based upon python in-built Boston Dataset. This was the first project that I did As a Machine Learning Entuhusiast.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="far fa-eye"></i> View</button>
@@ -132,13 +179,37 @@
           </div>
           <div class="col">
             <div class="card shadow-sm bg ">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <img src="https://www.dhanistocks.com/blog/wp-content/uploads/2019/05/Important-functions-of-stock-market-777x435.jpg" alt="img" class="responsive_img">
+            
+              <div class="card-body" style = "margin:0.6%">
+                <h4>Trade Akinator | Personal project</h4>
+                <p class="card-text">Used mulitple Decission tree algorithms in Knime analytics software.To develope a program that could guide a newbie a trader, what to do in stock market.It suggests weather to sell/buy/none. It uses a custome Dataset which I had to develope myself and has 64 descrete rows</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="far fa-eye"></i> View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary text-white">
+                      <a href="https://drive.google.com/drive/folders/1mKwQAy0vRPhCJFASMuMX3VHnM3544e9F?usp=sharing" target = blank  height="100%" width = "100%">
+                      <i class="far fa-eye link"></i></a>View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="fas fa-heart"></i> Like</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col" ">
+            <div class="card shadow-sm bg ">
+              <img src="https://i.pinimg.com/736x/45/c3/b3/45c3b3bdc0bc90966c3d1f2a71ee46b4.jpg" alt="img"  class="responsive_img">
+            
+  
+              <div class="card-body">
+                <h4>Jarvis Ai | Personal Assistant</h4>
+                <p class="card-text">Voice Recognition, Used around 20-25 python packages, ML/DL/NLP models. Developed it before starting the internship. Super Fast and Super Handy! This one is pretty basic a simple rulebot to be precise. We can use it for simple task on our computer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary text-white">
+                      <a href="https://github.com/Praj-17/Mega-Projects/tree/master/Jarvis%20Basic" target = blank>
+                      <i class="far fa-eye link"></i></a> View</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="fas fa-heart"></i> Like</button>
                   </div>
                   <small class="text-muted">9 mins</small>
@@ -148,13 +219,17 @@
           </div>
           <div class="col">
             <div class="card shadow-sm bg ">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <img src="https://softwaresuggest-cdn.s3-ap-southeast-1.amazonaws.com/pageimages/Student-Management-System-Guide-min.png" alt="img" class="responsive_img">
+            
   
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h4>Student Management System</h4>
+                <p class="card-text">Done completely in Python! and then database created in a csv. The teachers or the professional staff could add, retrieve, delete and modify students data. Done in the first year as a PBL project in B.Tech.We were a team of 4 and later we also created a MySQL database for the same</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="far fa-eye"></i> View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary text-white">
+                      <a href="https://github.com/Praj-17/Mega-Projects/tree/master/Student%20Management%20system" target = blank>
+                      <i class="far fa-eye link"></a></i> View</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="fas fa-heart"></i> Like</button>
                   </div>
                   <small class="text-muted">9 mins</small>
@@ -162,55 +237,7 @@
               </div>
             </div>
           </div>
-  
-          <div class="col">
-            <div class="card shadow-sm bg ">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="far fa-eye"></i> View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="fas fa-heart"></i> Like</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm bg ">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="far fa-eye"></i> View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="fas fa-heart"></i> Like</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm bg ">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="far fa-eye"></i> View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary text-white"><i class="fas fa-heart"></i> Like</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
+         
   
           <div class="col">
             <div class="card shadow-sm bg ">
@@ -267,7 +294,6 @@
   </main>
   
   <div class="bg-dark text-white" style="background-color: black;">
-    <hr class="bg-dark" ">
     </hr>
   </div>          
    <div class=" bg-dark text-white" style="padding-bottom:1% ;padding-top : 1%">
@@ -292,7 +318,6 @@
          <li class="nav-item mb-2" style = "margin: 0.5%;"><a  target = blank href="/Experience.html" class="nav-link p-0 text-muted">Experience</a></li>
          <li class="nav-item mb-2" style = "margin: 0.5%;"><a  target = blank href="/Extra Curricular.html" class="nav-link p-0 text-muted">Extra Curricular</a></li>
          <li class="nav-item mb-2" style = "margin: 0.5%;"><a target = blank  href="/Contact me.html" class="nav-link p-0 text-muted">Contact me</a></li>
-       </ul>
        </ul>
        <div class=" px-10  py-24 mx-auto center text-center">
        <span class="inline-flex">
