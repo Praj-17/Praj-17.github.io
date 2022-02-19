@@ -8,25 +8,32 @@
     });
 
     //Non technical skills animation
-    $(".skill").mouseleave(function () {
-      $(".skill-details").hide(1000);
-      $(".skill-details").css('display', 'block');
-    });
+    // $(".skill").mouseleave(function () {
+    //   $(".skill-details").hide(1000);
+    //   $(".skill-details").css('display', 'block');
+    // });
 
-    $(".skill").mouseenter(function () {
+    $(".skill").hover(function () {
       $(".skill-details").show(1000);
       $(".skill-details").css('display', 'block');
       
     });
 
-    $(".skill2").mouseleave(function () {
-      $(".skill-details2").hide(1000);
-      $(".skill-details2").css('display', 'block');
-    });
-    $(".skill2").mouseenter(function () {
+    // $(".skill2").mouseleave(function () {
+    //   $(".skill-details2").hide(1000);
+    //   $(".skill-details2").css('display', 'block');
+    // });
+    $(".skill2").hover(function () {
       $(".skill-details2").show(1000);
       $(".skill-details2 ").css('display', 'block');
     });
+
+     $(".animated-div").mouseleave(function () {
+      $(".skill-details2").hide(1000);
+      $(".skill-details").hide(1000);
+     $(".skill-details2").css('display', 'block');
+     $(".skill-details").css('display', 'block');
+     });
 
     //Animate Function in Jquery
     // $('#lorem').animate({
