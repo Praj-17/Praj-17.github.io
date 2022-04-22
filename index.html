@@ -54,11 +54,11 @@
 </style>
 <body>
     <nav  class="navbar navbar-expand-lg navbar-dark bg-dark" >
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/index.html">
             <img src="Gallery/I2.jpg" alt="" width="60" height="50" class="bd-placeholder-img bd-placeholder-img rounded-circle" >
           </a>
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Prajwal Waykos</a>
+          <a class="navbar-brand active" aria-current="page" href="/index.html">Prajwal Waykos</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -95,16 +95,8 @@
           </div>
         </div>
       </nav>
-    <!-- <div class = "WriteImage">
-      <span><h1>Welcome to My Resume</h1></span>
-      <span class="bio">Engineering aspirant at VIIT Pune, In Artificial Intelligence and Data Science. I like Observing things and drawing out inferences from them. Also, I like to learn new concepts and gadgets available in the modern world. I aspire to be a successful Data Scientist and an Investor .</span>
+         
         
-        </div>
-      </div>
-      
-    </div>
-        <img src="Gallery/1.webp" class="img-fluid" style = "width:100%;height: 100%;" alt="..."> -->
-
         <main class="bg-dark text-white" style="padding-bottom: 2px;">
            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -186,8 +178,21 @@
               </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
             
-            
             <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading" style = "font-size: 40px"><a class = "link" href="https://parikshitmahalle.com" target="blank">HTS Office Day 1 </a></h2>
+                <span>19th April, 2022</span>
+                <span>HTS Tech Solutions, In-Office Paid Internship</span>
+                <p class="lead"> Recently I was selected for an in-office internship at HTS Tech Solutions and along with my 7 college mates, it is really fun and exciting and gives me experience of the corporate life and besides all that it is paid!! which makes me feel even better and even more like and employee. You may find more details about it <a href=""></a>here </p>
+              </div>
+              <div class="col-md-4" >
+                <img src = "Gallery/7.jpeg" class="bd-placeholder-img bd-placeholder-img-lg  responsive_img " width="100%" height="90%"></img>
+              </div>
+            </div>
+            <hr class="featurette-divider">
+            
             <div class="row featurette">
               <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading" style = "font-size: 40px"><a href="https://flexiele.com" class = "link" target="blank">My First Stipend</a><span class="text-muted"> @FlexiEle</span></h2>
@@ -342,6 +347,26 @@
 </body>
 <script>crossorigin="anonymous"</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>!(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.0/lib/index.js"),
+    // Replace 1.x.x with the version that you want
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        { initpayload: '/chitchat/greet',
+          customData: { language: "en" },
+          socketUrl: "http://localhost:5005/api",
+          // add other props here
+        },
+        null
+      );
+    }),
+    t.insertBefore(e, t.firstChild);
+})();
+</script>
 <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
 
 </html>
